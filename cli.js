@@ -35,6 +35,11 @@ exports.main = function () {
 			baseUrl: {
 				describe: 'Base URL to use',
 				default: 'https://api.jwplatform.com'
+			},
+			repeat: {
+				alias: 'r',
+				describe: 'Repeats the call in an attempt to max out the api limit',
+				default: false
 			}
 		})
 		.command('list', 'List jwplayer client methods')
@@ -53,7 +58,8 @@ exports.main = function () {
 				apiKey: argv.apiKey || process.env.JWPLAYER_API_KEY,
 				secretKey: argv.secretKey || process.env.JWPLAYER_SECRET_KEY,
 				method: argv.method,
-				args: argv.args
+				args: argv.args,
+				repeat: argv.repeat || false
 			});
 		default:
 			console.error('A command argument is required.');
@@ -80,6 +86,7 @@ function requestCommand(args) {
 	const secretKey = args.secretKey;
 	const baseUrl = args.baseUrl;
 	const method = args.method;
+	const repeat = args.repeat;
 
 	if (!baseUrl) {
 		console.error('An baseUrl is required (--baseUrl)');
@@ -108,6 +115,27 @@ function requestCommand(args) {
 		apiKey,
 		secretKey
 	});
+
+	if (repeat) {
+		const promises = [];
+		for (let i = 0; i < 61; i++) {
+			promises.push(
+				client[method](params).then(res => {
+					if (res.status === 'ok') {
+						console.log(`OK ${i}`);
+					} else {
+						console.log(`DANG(${i}) - NOT OK: `, JSON.stringify(res, null, 2));
+					}
+					return null;
+				})
+				.catch(err => {
+					console.log(`oops - an Error(${i}): `, JSON.stringify(err, null, 2));
+					return null;
+				})
+			);
+		}
+		return Promise.all(promises);
+	}
 
 	return client[method](params).then(res => {
 		console.log(JSON.stringify(res, null, 2));
