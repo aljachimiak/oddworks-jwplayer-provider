@@ -1,0 +1,37 @@
+{
+  "conversions": [
+    {
+      "status": "Ready",
+      "template": {
+        "required": false,
+        "format": {
+          "name": "H.264 Baseline",
+          "key": "mp4"
+        },
+        "id": 27299456,
+        "key": "ItdNzqOP",
+        "name": "1080p"
+      },
+      "mediatype": "video",
+      "height": 1080,
+      "width": 1920,
+      "link": {
+        "path": "/videos/F33ExjRC-ItdNzqOP.mp4",
+        "protocol": "http",
+        "address": "content.jwplatform.com"
+      },
+      "filesize": "4905764",
+      "key": "iqOXeQeU",
+      "duration": "10.48"
+    }
+  ],
+  "status": "ok",
+  "rate_limit": {
+    "reset": 1482761520,
+    "limit": 60,
+    "remaining": 59
+  },
+  "limit": 3,
+  "offset": 6,
+  "total": 7
+}

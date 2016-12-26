@@ -1,0 +1,55 @@
+{
+  "status": "ok",
+  "videos": [
+    {
+      "description": "",
+      "tags": "testing",
+      "mediatype": "video",
+      "date": 1481039313,
+      "link": "",
+      "key": "hmEcctbB",
+      "duration": "15.96",
+      "md5": "63e249e9fda69709cc38abb812dab73f",
+      "title": "Book - 4952.mp4",
+      "views": 1,
+      "author": null,
+      "custom": {}
+    },
+    {
+      "description": "",
+      "tags": "testing",
+      "mediatype": "video",
+      "date": 1481039313,
+      "link": "",
+      "key": "hmEcctbB",
+      "duration": "15.96",
+      "md5": "63e249e9fda69709cc38abb812dab73f",
+      "title": "Book - 4952.mp4",
+      "views": 1,
+      "author": null,
+      "custom": {}
+    },
+    {
+      "description": "",
+      "tags": "testing",
+      "mediatype": "video",
+      "date": 1481039313,
+      "link": "",
+      "key": "F33ExjRC",
+      "duration": "10.48",
+      "md5": "82a1a61e9f7e21a1f651fb5453393e5e",
+      "title": "Clock - 3019.mp4",
+      "views": 1,
+      "author": null,
+      "custom": {}
+    }
+  ],
+  "rate_limit": {
+    "reset": 1482761040,
+    "limit": 60,
+    "remaining": 59
+  },
+  "limit": 3,
+  "offset": 3,
+  "total": 8
+}

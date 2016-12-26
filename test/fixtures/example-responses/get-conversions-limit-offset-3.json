@@ -1,0 +1,84 @@
+{
+  "conversions": [
+    {
+      "status": "Ready",
+      "template": {
+        "required": false,
+        "format": {
+          "name": "H.264 Baseline",
+          "key": "mp4"
+        },
+        "id": 27299452,
+        "key": "YXZ5Ma4p",
+        "name": "406p"
+      },
+      "mediatype": "video",
+      "height": 406,
+      "width": 720,
+      "link": {
+        "path": "/videos/F33ExjRC-YXZ5Ma4p.mp4",
+        "protocol": "http",
+        "address": "content.jwplatform.com"
+      },
+      "filesize": "505329",
+      "key": "kPabvL6O",
+      "duration": "10.48"
+    },
+    {
+      "status": "Ready",
+      "template": {
+        "required": false,
+        "format": {
+          "name": "H.264 Baseline",
+          "key": "mp4"
+        },
+        "id": 27299453,
+        "key": "NE1DK3PU",
+        "name": "720p"
+      },
+      "mediatype": "video",
+      "height": 720,
+      "width": 1280,
+      "link": {
+        "path": "/videos/F33ExjRC-NE1DK3PU.mp4",
+        "protocol": "http",
+        "address": "content.jwplatform.com"
+      },
+      "filesize": "1725068",
+      "key": "Ls1a6YzB",
+      "duration": "10.48"
+    },
+    {
+      "status": "Failed",
+      "key": "OCsOSnSY",
+      "mediatype": "audio",
+      "height": -1,
+      "width": -1,
+      "filesize": "-1",
+      "template": {
+        "required": true,
+        "format": {
+          "name": "AAC",
+          "key": "aac"
+        },
+        "id": 27299455,
+        "key": "0AkXT4dd",
+        "name": "AAC Audio"
+      },
+      "error": {
+        "message": "Request for audio conversion of video without audio stream",
+        "id": 0
+      },
+      "duration": -1
+    }
+  ],
+  "status": "ok",
+  "rate_limit": {
+    "reset": 1482761460,
+    "limit": 60,
+    "remaining": 59
+  },
+  "limit": 3,
+  "offset": 3,
+  "total": 7
+}

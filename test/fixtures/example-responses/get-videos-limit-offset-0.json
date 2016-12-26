@@ -1,0 +1,58 @@
+{
+  "status": "ok",
+  "videos": [
+    {
+      "description": "",
+      "tags": "AlsTheMan, beard, odd",
+      "mediatype": "video",
+      "date": 1471030486,
+      "link": "",
+      "key": "617kMdbG",
+      "duration": "8.06",
+      "md5": "7afc2da385640da0ef64567112b246db",
+      "title": "Old Odd Logo",
+      "views": 6,
+      "author": null,
+      "custom": {
+        "Actor2": "The Beard",
+        "Actor": "Blain Smith"
+      }
+    },
+    {
+      "description": "",
+      "tags": "testing",
+      "mediatype": "video",
+      "date": 1481039313,
+      "link": "",
+      "key": "F33ExjRC",
+      "duration": "10.48",
+      "md5": "82a1a61e9f7e21a1f651fb5453393e5e",
+      "title": "Clock - 3019.mp4",
+      "views": 1,
+      "author": null,
+      "custom": {}
+    },
+    {
+      "description": "",
+      "tags": "testing",
+      "mediatype": "video",
+      "date": 1481039313,
+      "link": "",
+      "key": "F33ExjRC",
+      "duration": "10.48",
+      "md5": "82a1a61e9f7e21a1f651fb5453393e5e",
+      "title": "Clock - 3019.mp4",
+      "views": 1,
+      "author": null,
+      "custom": {}
+    }
+  ],
+  "rate_limit": {
+    "reset": 1482760980,
+    "limit": 60,
+    "remaining": 59
+  },
+  "limit": 3,
+  "offset": 0,
+  "total": 8
+}
