@@ -12,7 +12,8 @@ const DEFAULTS = {
 	baseUrl: 'https://api.jwplatform.com',
 	// baseUrl: 'https://api.jwplayer.com',
 	collectionTransform: defaultCollectionTransform,
-	videoTransform: defaultVideoTransform
+	videoTransform: defaultVideoTransform,
+	maxResults: 1000
 };
 
 // options.bus
@@ -115,6 +116,7 @@ exports.createClient = function (options) {
 	const baseUrl = options.baseUrl;
 	const secretKey = options.secretKey;
 	const apiKey = options.apiKey;
+	const maxResults = options.maxResults;
 
 	if (!apiKey || typeof apiKey !== 'string') {
 		throw new Error('oddworks-jwplayer-provider requires an jwplayer apiKey key');
@@ -123,5 +125,5 @@ exports.createClient = function (options) {
 		throw new Error('oddworks-jwplayer-provider requires an jwplayer secretKey key');
 	}
 
-	return new Client({bus, baseUrl, secretKey, apiKey});
+	return new Client({bus, baseUrl, secretKey, apiKey, maxResults});
 };
