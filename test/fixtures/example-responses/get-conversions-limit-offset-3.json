@@ -16,13 +16,13 @@
       "height": 406,
       "width": 720,
       "link": {
-        "path": "/videos/F33ExjRC-YXZ5Ma4p.mp4",
+        "path": "/videos/617kMdbG-YXZ5Ma4p.mp4",
         "protocol": "http",
         "address": "content.jwplatform.com"
       },
-      "filesize": "505329",
-      "key": "kPabvL6O",
-      "duration": "10.48"
+      "filesize": "228796",
+      "key": "mWqEMgNW",
+      "duration": "8.10"
     },
     {
       "status": "Ready",
@@ -40,21 +40,16 @@
       "height": 720,
       "width": 1280,
       "link": {
-        "path": "/videos/F33ExjRC-NE1DK3PU.mp4",
+        "path": "/videos/617kMdbG-NE1DK3PU.mp4",
         "protocol": "http",
         "address": "content.jwplatform.com"
       },
-      "filesize": "1725068",
-      "key": "Ls1a6YzB",
-      "duration": "10.48"
+      "filesize": "427594",
+      "key": "Kl0vjh4w",
+      "duration": "8.10"
     },
     {
-      "status": "Failed",
-      "key": "OCsOSnSY",
-      "mediatype": "audio",
-      "height": -1,
-      "width": -1,
-      "filesize": "-1",
+      "status": "Ready",
       "template": {
         "required": true,
         "format": {
@@ -65,20 +60,26 @@
         "key": "0AkXT4dd",
         "name": "AAC Audio"
       },
-      "error": {
-        "message": "Request for audio conversion of video without audio stream",
-        "id": 0
+      "mediatype": "audio",
+      "height": -1,
+      "width": -1,
+      "link": {
+        "path": "/videos/617kMdbG-0AkXT4dd.m4a",
+        "protocol": "http",
+        "address": "content.jwplatform.com"
       },
-      "duration": -1
+      "filesize": "115586",
+      "key": "ueHNujon",
+      "duration": "8.10"
     }
   ],
   "status": "ok",
   "rate_limit": {
-    "reset": 1482761460,
+    "reset": 1482765840,
     "limit": 60,
     "remaining": 59
   },
   "limit": 3,
   "offset": 3,
-  "total": 7
+  "total": 6
 }
