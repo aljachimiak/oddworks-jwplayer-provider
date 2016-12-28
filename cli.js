@@ -118,7 +118,7 @@ function requestCommand(args) {
 
 	if (repeat) {
 		const promises = [];
-		for (let i = 0; i < 61; i++) {
+		for (let i = 0; i < 120; i++) {
 			promises.push(
 				client[method](params).then(res => {
 					if (res.status === 'ok') {
