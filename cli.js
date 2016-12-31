@@ -9,6 +9,7 @@ REQUEST_METHODS.makeRequest = '{"path": "STRING"}';
 REQUEST_METHODS.getPlaylists = '{}';
 REQUEST_METHODS.getPlaylist = '{"playlistId": "STRING"}';
 REQUEST_METHODS.getVideosByPlaylist = '{"playlistId": "STRING"}';
+REQUEST_METHODS.getFeed = '{"playlistId": "STRING"}';
 REQUEST_METHODS.getVideo = '{"videoId": "STRING"}';
 REQUEST_METHODS.getConversionsByVideo = '{"videoId": "STRING"}';
 
@@ -102,7 +103,6 @@ function requestCommand(args) {
 		console.error(err.message);
 		return Promise.resolve(null);
 	}
-
 	const client = new Client({
 		baseUrl,
 		apiKey,
